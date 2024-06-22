@@ -16,9 +16,9 @@ except:
 
 def pushover_notification(message, title=None):
     if title == None:
-        title = "Hasznaltauto python scrape"
+        title = "The Economist scrape"
     else: 
-        title = "Hasznaltauto python scrape - " + title
+        title = "The Economist scrape - " + title
 
     try:
         # URL for the Pushover API
