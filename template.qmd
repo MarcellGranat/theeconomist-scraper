@@ -1,0 +1,28 @@
+---
+title: The Economist
+date: today
+format: pdf
+toc: true
+header-includes: 
+  - |
+    \usepackage[margin=0.1in]{geometry}
+    \usepackage{times}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{\leftmark}
+    \fancyhead[R]{\thepage}
+    \usepackage{sectsty}
+    \sectionfont{\color{red}\LARGE\bfseries}
+    \subsectionfont{\color{red}\Large\bfseries}
+    \renewcommand{\normalsize}{\Large}
+    \titlehead{\includegraphics[width=8.2in]{cover.jpg} \newpage}
+---
+
+```{python}
+#| echo: false
+from print_edition import print_edition
+from IPython.display import Markdown
+
+Markdown(print_edition())
+```
